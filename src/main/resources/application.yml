@@ -1,0 +1,16 @@
+
+server:
+  port: 8093
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:restaurant_reservation_system_db
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
